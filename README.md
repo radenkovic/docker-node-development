@@ -1,4 +1,4 @@
-# Docker for node develoment sample
+# Docker for node development sample
 
 This is configured sample with `Docker`, `docker-compose` and `nodemon` for live reloading of the server,
 so you don't need node installation locally at all. Uses small `node10-alpine` image.
