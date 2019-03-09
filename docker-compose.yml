@@ -8,6 +8,8 @@ services:
     volumes:
       - ./src:/usr/app/src
       - ./package.json:/usr/app/package.json
+      # if you want local node_modules
+      # - ./node_modules:/usr/app/node_modules
     environment:
       NODE_ENV: development
       PORT: 8080
