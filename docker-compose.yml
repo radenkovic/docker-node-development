@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  web_development:
+    build: ./
+    restart: always
+    command: ["yarn", "dev"]
+    volumes:
+      - ./src:/usr/app/src
+      - ./package.json:/usr/app/package.json
+    environment:
+      NODE_ENV: development
+      PORT: 8080
+    ports:
+      - 8080:8080
+  # you can add more services here (db, redis etc)
